@@ -365,7 +365,7 @@ const DropdownComponent: <T>(
     const _renderDropdown = () => {
       const isSelected = currentValue && _.get(currentValue, valueField);
       return (
-        <TouchableWithoutFeedback
+        <TouchableHighlight
           testID={testID}
           accessible={!!accessibilityLabel}
           accessibilityLabel={accessibilityLabel}
@@ -402,7 +402,7 @@ const DropdownComponent: <T>(
             )}
           </View>
           }
-        </TouchableWithoutFeedback>
+        </TouchableHighlight>
       );
     };
 
