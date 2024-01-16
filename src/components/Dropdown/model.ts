@@ -57,6 +57,7 @@ export interface DropdownProps<T> {
   onChange: (item: T) => void;
   renderLeftIcon?: (visible?: boolean) => JSX.Element | null | undefined;
   renderRightIcon?: (visible?: boolean) => JSX.Element | null | undefined;
+  renderMainView?: () => JSX.Element | null | undefined;
   renderItem?: (item: T, selected?: boolean) => JSX.Element | null | undefined;
   renderInputSearch?: (
     onSearch: (text: string) => void
